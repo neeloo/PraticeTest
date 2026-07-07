@@ -1,26 +1,20 @@
 package com.practice.CRUD.API.Models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
+@Table(name = "employees")
 public class Employee {
+
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-    Long id;
-    String name;
-    String email;
-    double salary;
+    private String name;
 
-    public Employee(Long id, String name, String email, double salary) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
-        this.salary = salary;
-    }
+    private String email;
+
+    private double salary;
 
     public Long getId() {
         return id;
@@ -53,4 +47,16 @@ public class Employee {
     public void setSalary(double salary) {
         this.salary = salary;
     }
+
+    public Employee() {
+    }
+
+    public Employee(Long id, String name, String email, double salary) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.salary = salary;
+    }
+
+    // Getters and Setters
 }
