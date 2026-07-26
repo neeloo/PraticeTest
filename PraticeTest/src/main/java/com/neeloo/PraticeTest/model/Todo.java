@@ -7,9 +7,7 @@ public class Todo {
         this.completed = completed;
     }
 
-   public Todo(){
-
-    }
+   public Todo(){}
 
     int id;
     String task;
