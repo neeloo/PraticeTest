@@ -1,4 +1,5 @@
 package com.neeloo.PraticeTest.model;
+
 public class Todo {
 
     public Todo(int id, String task, boolean completed) {
