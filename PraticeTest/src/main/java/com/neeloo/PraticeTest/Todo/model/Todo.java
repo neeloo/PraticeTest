@@ -1,4 +1,4 @@
-package com.neeloo.PraticeTest.model;
+package com.neeloo.PraticeTest.Todo.model;
 
 public class Todo {
 

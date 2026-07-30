@@ -1,7 +1,7 @@
-package com.neeloo.PraticeTest.controller;
+package com.neeloo.PraticeTest.Todo.controller;
 
-import com.neeloo.PraticeTest.model.Todo;
-import com.neeloo.PraticeTest.service.Todoservice;
+import com.neeloo.PraticeTest.Todo.model.Todo;
+import com.neeloo.PraticeTest.Todo.service.Todoservice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

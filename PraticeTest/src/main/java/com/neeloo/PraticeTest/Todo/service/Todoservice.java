@@ -1,7 +1,6 @@
-package com.neeloo.PraticeTest.service;
+package com.neeloo.PraticeTest.Todo.service;
 
-import com.neeloo.PraticeTest.model.Todo;
-import lombok.Setter;
+import com.neeloo.PraticeTest.Todo.model.Todo;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
