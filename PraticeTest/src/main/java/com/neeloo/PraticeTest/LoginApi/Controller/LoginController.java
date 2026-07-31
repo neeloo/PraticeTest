@@ -29,7 +29,6 @@ public class LoginController {
         if (result) {
             return ResponseEntity.ok("Login Successful");
         }
-
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
                 .body("Invalid Username or Password");
     }
