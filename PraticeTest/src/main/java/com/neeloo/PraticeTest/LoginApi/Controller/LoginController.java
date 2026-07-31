@@ -10,19 +10,19 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
-@RequestMapping("/api")
+@RestController /// Used to create REST APIs.
+@RequestMapping("/api")  /// used to Maps a URL to a controller or method.
 public class LoginController {
+
+    @Autowired
+    private LoginService loginService;
 
     public LoginController(LoginService loginService) {
         this.loginService = loginService;
     }
 
-    @Autowired
-    LoginService loginService;
-
-    @PostMapping("/api")
-    public ResponseEntity<String>login(@RequestBody LoginUser user){
+    @PostMapping("/login")
+    public ResponseEntity<String> login(@RequestBody LoginUser user) {
 
         boolean result = loginService.login(user.getUserName(), user.getPassword());
 
