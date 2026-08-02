@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController /// Used to create REST APIs.
 @RequestMapping("/api")  /// used to Maps a URL to a controller or method.
+
 public class LoginController {
 
     @Autowired
